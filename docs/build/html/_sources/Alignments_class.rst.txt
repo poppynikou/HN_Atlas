@@ -1,0 +1,26 @@
+Alignments Class
+==================================
+
+Alignments Class which inherits from Img Class. 
+Contains methods to align patients, and generate bash scripts to run on cluster for deformable registrations.
+
+AffineAlignment
+-------------------------------------
+.. automodule:: Classes.Alignments.AffineAlignment
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _AffineAlignment:
+
+Generate_Bash_Scripts
+-------------------------------------
+.. automodule:: Classes.Alignments.Generate_Bash_Scripts
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _Generate_Bash_Scripts:
+
+
+

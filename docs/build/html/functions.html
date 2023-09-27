@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+
+<html lang="Python">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>NiftiReg Wrapper Functions &#8212; HN_atlas 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Groupwise Class" href="Groupwise_class.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Groupwise_class.html" title="Groupwise Class"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HN_atlas 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">NiftiReg Wrapper Functions</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="niftireg-wrapper-functions">
+<h1>NiftiReg Wrapper Functions<a class="headerlink" href="#niftireg-wrapper-functions" title="Permalink to this headline">¶</a></h1>
+<p>This page provides documentation for the utility functions available in the niftireg wrapper functions python script</p>
+<section id="module-utils.rigidReg">
+<span id="rigidreg"></span><h2>rigidReg<a class="headerlink" href="#module-utils.rigidReg" title="Permalink to this headline">¶</a></h2>
+<p>Perform a rigid registration using Aladin registration algorithm</p>
+<dl class="field-list simple">
+<dt class="field-odd">param reg_aladin_path</dt>
+<dd class="field-odd"><p>path to reg_aladin executable (.exe)</p>
+</dd>
+<dt class="field-even">type reg_aladin_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param ref_img</dt>
+<dd class="field-odd"><p>path to reference image (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type ref_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param float_img</dt>
+<dd class="field-odd"><p>path to floating image (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type float_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param affine_matrix</dt>
+<dd class="field-odd"><p>path to resulting affine matrix (.txt)</p>
+</dd>
+<dt class="field-even">type affine_matrix</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param resampled_img</dt>
+<dd class="field-odd"><p>path to floating reference image with affine matrix (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type resampled_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param RigOnly</dt>
+<dd class="field-odd"><p>specify whether this is a rigid only or affine registration (.txt)</p>
+</dd>
+<dt class="field-even">type resampled_img</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</section>
+<section id="module-utils.rigidReg_SINGLETREAD">
+<span id="rigidreg-singletread"></span><span id="id1"></span><h2>rigidReg_SINGLETREAD<a class="headerlink" href="#module-utils.rigidReg_SINGLETREAD" title="Permalink to this headline">¶</a></h2>
+<p>Perform a rigid registration using Aladin registration algorithm with a single thread</p>
+<dl class="field-list simple">
+<dt class="field-odd">param reg_aladin_path</dt>
+<dd class="field-odd"><p>path to reg_aladin executable (.exe)</p>
+</dd>
+<dt class="field-even">type reg_aladin_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param ref_img</dt>
+<dd class="field-odd"><p>path to reference image (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type ref_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param float_img</dt>
+<dd class="field-odd"><p>path to floating image (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type float_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param affine_matrix</dt>
+<dd class="field-odd"><p>path to resulting affine matrix (.txt)</p>
+</dd>
+<dt class="field-even">type affine_matrix</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param resampled_img</dt>
+<dd class="field-odd"><p>path to floating reference image with affine matrix (.txt)</p>
+</dd>
+<dt class="field-even">type resampled_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param RigOnly</dt>
+<dd class="field-odd"><p>specify whether this is a rigid only or affine registration</p>
+</dd>
+<dt class="field-even">type resampled_img</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</section>
+<section id="module-utils.deformableReg">
+<span id="deformablereg"></span><span id="id2"></span><h2>deformableReg<a class="headerlink" href="#module-utils.deformableReg" title="Permalink to this headline">¶</a></h2>
+<p>Perform a deformable registration between a reference and floating image. 
+The optimization is perfromed with a normalised linear cross corelation as similarity measure with a five voxel gaussian window.
+A linear energy regularization with a weighting of 0.1 is used. 
+A control point spacing of 10 voxels is set in all x,y,z directions and 5 levels are used. 
+Resampled images are padded with nan.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param reg_f3d_path</dt>
+<dd class="field-odd"><p>path to reg_f3d executable (.exe)</p>
+</dd>
+<dt class="field-even">type reg_f3d_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param ref_img</dt>
+<dd class="field-odd"><p>path to reference image (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type ref_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param float_img</dt>
+<dd class="field-odd"><p>path to floating image to resample(.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type float_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param transformation</dt>
+<dd class="field-odd"><p>path to transformation (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type transformation</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param resampled_img</dt>
+<dd class="field-odd"><p>path to resampled image (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type resampled_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</div></blockquote>
+</section>
+<section id="module-utils.avgAff">
+<span id="avgaff"></span><span id="id3"></span><h2>avgAff<a class="headerlink" href="#module-utils.avgAff" title="Permalink to this headline">¶</a></h2>
+<p>Calculate the average affine of a group of affine matrixes</p>
+<dl class="field-list simple">
+<dt class="field-odd">param reg_average_path</dt>
+<dd class="field-odd"><p>path to reg_average executable (.exe)</p>
+</dd>
+<dt class="field-even">type reg_average_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param average_affine_path</dt>
+<dd class="field-odd"><p>path to where to store the average affine matrix (.txt)</p>
+</dd>
+<dt class="field-even">type average_affine_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param affine_matrixes</dt>
+<dd class="field-odd"><p>a list of affine matrixes to average []</p>
+</dd>
+<dt class="field-even">type affine_matrixes</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</section>
+<section id="module-utils.invAff">
+<span id="invaff"></span><span id="id4"></span><h2>invAff<a class="headerlink" href="#module-utils.invAff" title="Permalink to this headline">¶</a></h2>
+<p>Calculate the inverse of an affine transformation</p>
+<dl class="field-list simple">
+<dt class="field-odd">param reg_transform_path</dt>
+<dd class="field-odd"><p>path to reg_transform executable (.exe)</p>
+</dd>
+<dt class="field-even">type reg_transform_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param ref_img</dt>
+<dd class="field-odd"><p>path to reference image used in registration where affine matrix was obtained (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type ref_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param affine</dt>
+<dd class="field-odd"><p>path to affine matrix to invert (.txt)</p>
+</dd>
+<dt class="field-even">type affine</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param inv_affine</dt>
+<dd class="field-odd"><p>path to inverse affine matrix (.txt)</p>
+</dd>
+<dt class="field-even">type inv_affine</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</section>
+<section id="module-utils.invDef">
+<span id="invdef"></span><span id="id5"></span><h2>invDef<a class="headerlink" href="#module-utils.invDef" title="Permalink to this headline">¶</a></h2>
+<p>Calculate the inverse of a deformation field</p>
+<dl class="field-list simple">
+<dt class="field-odd">param reg_transform_path</dt>
+<dd class="field-odd"><p>path to reg_transform executable (.exe)</p>
+</dd>
+<dt class="field-even">type reg_transform_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param ref_img</dt>
+<dd class="field-odd"><p>path to reference image used in registration where the deformation field was obtained (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type ref_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param Def_transformation</dt>
+<dd class="field-odd"><p>path to deformation field to invert (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type Def_transformation</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param inv_Def_transformation</dt>
+<dd class="field-odd"><p>path to inverse deformation field (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type inv_Def_transformation</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</section>
+<section id="module-utils.resampleImg">
+<span id="resampleimg"></span><span id="id6"></span><h2>resampleImg<a class="headerlink" href="#module-utils.resampleImg" title="Permalink to this headline">¶</a></h2>
+<p>Resample an Image with cubic interpolation and pad with nan</p>
+<dl class="field-list simple">
+<dt class="field-odd">param reg_resample_path</dt>
+<dd class="field-odd"><p>path to reg_resample executable (.exe)</p>
+</dd>
+<dt class="field-even">type reg_resample_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param ref_img</dt>
+<dd class="field-odd"><p>path to reference image (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type ref_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param float_img</dt>
+<dd class="field-odd"><p>path to floating image to resample(.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type float_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param transformation</dt>
+<dd class="field-odd"><p>path to transformation to resample with (.nii.gz/.nii/.txt)</p>
+</dd>
+<dt class="field-even">type transformation</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param resampled_img</dt>
+<dd class="field-odd"><p>path to resampled image (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type resampled_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</section>
+<section id="module-utils.resampleBINImg">
+<span id="resamplebinimg"></span><span id="id7"></span><h2>resampleBINImg<a class="headerlink" href="#module-utils.resampleBINImg" title="Permalink to this headline">¶</a></h2>
+<p>Resample a binary Image with linear interpolation and pad with 0</p>
+<dl class="field-list simple">
+<dt class="field-odd">param reg_resample_path</dt>
+<dd class="field-odd"><p>path to reg_resample executable (.exe)</p>
+</dd>
+<dt class="field-even">type reg_resample_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param ref_img</dt>
+<dd class="field-odd"><p>path to reference image (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type ref_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param float_img</dt>
+<dd class="field-odd"><p>path to floating image to resample (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type float_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param transformation</dt>
+<dd class="field-odd"><p>path to transformation to resample with (.nii.gz/.nii/.txt)</p>
+</dd>
+<dt class="field-even">type transformation</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param resampled_img</dt>
+<dd class="field-odd"><p>path to resampled image (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type resampled_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</section>
+<section id="module-utils.UpdSform">
+<span id="updsform"></span><span id="id8"></span><h2>UpdSform<a class="headerlink" href="#module-utils.UpdSform" title="Permalink to this headline">¶</a></h2>
+<p>Update the Sform of an image</p>
+<dl class="field-list simple">
+<dt class="field-odd">param reg_transform_path</dt>
+<dd class="field-odd"><p>path to reg_transform executable (.exe)</p>
+</dd>
+<dt class="field-even">type reg_transform_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param img_to_be_updated_path</dt>
+<dd class="field-odd"><p>path to image which the Sform needs updating (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type img_to_be_updated_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param affine_matrix_path</dt>
+<dd class="field-odd"><p>path to affine matrix to update the Sform with (.txt)</p>
+</dd>
+<dt class="field-even">type affine_matrix_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param updated_img_path</dt>
+<dd class="field-odd"><p>path to image which has been updated (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type updated_img_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</section>
+<section id="rigidtodeformation">
+<span id="id9"></span><h2>RigidToDeformation<a class="headerlink" href="#rigidtodeformation" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-utils.RigidToDeformation"></span><p>Calculation deformation fiel from rigid transformation</p>
+<dl class="field-list simple">
+<dt class="field-odd">param reg_transform_path</dt>
+<dd class="field-odd"><p>path to reg_transform executable (.exe)</p>
+</dd>
+<dt class="field-even">type reg_transform_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param ref_img</dt>
+<dd class="field-odd"><p>path to reference image (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type ref_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param input_transformation</dt>
+<dd class="field-odd"><p>path to rigid transfromation (.txt)</p>
+</dd>
+<dt class="field-even">type input_transformation</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param output_transformation</dt>
+<dd class="field-odd"><p>path to deformation field (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type output_transformation</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</section>
+<section id="module-utils.CppToDeformation">
+<span id="cpptodeformation"></span><span id="id10"></span><h2>CppToDeformation<a class="headerlink" href="#module-utils.CppToDeformation" title="Permalink to this headline">¶</a></h2>
+<p>Calculation deformation fiel from control point grid</p>
+<dl class="field-list simple">
+<dt class="field-odd">param reg_transform_path</dt>
+<dd class="field-odd"><p>path to reg_transform executable (.exe)</p>
+</dd>
+<dt class="field-even">type reg_transform_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param ref_img</dt>
+<dd class="field-odd"><p>path to reference image (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type ref_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param input_transformation</dt>
+<dd class="field-odd"><p>path to control point grid transfromation (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type input_transformation</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param output_transformation</dt>
+<dd class="field-odd"><p>path to deformation field (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type output_transformation</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</section>
+<section id="composetransformations">
+<span id="id11"></span><h2>ComposeTransformations<a class="headerlink" href="#composetransformations" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-utils.ComposeTransformations"></span><p>Composition of two transformations  output_transformation(x) = transformation2(transformation1(x)).</p>
+<dl class="field-list simple">
+<dt class="field-odd">param reg_transform_path</dt>
+<dd class="field-odd"><p>path to reg_transform executable (.exe)</p>
+</dd>
+<dt class="field-even">type reg_transform_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param ref_img</dt>
+<dd class="field-odd"><p>path to reference image (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type ref_img</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param transformation1</dt>
+<dd class="field-odd"><p>path to deformation field (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type transformation1</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param transformation2</dt>
+<dd class="field-odd"><p>path to deformation field (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type transformation2</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param output_transformation</dt>
+<dd class="field-odd"><p>path to composed transfromation (.nii.gz/.nii)</p>
+</dd>
+<dt class="field-even">type output_transformation</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+<span class="target" id="id12"></span></section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">NiftiReg Wrapper Functions</a><ul>
+<li><a class="reference internal" href="#module-utils.rigidReg">rigidReg</a></li>
+<li><a class="reference internal" href="#module-utils.rigidReg_SINGLETREAD">rigidReg_SINGLETREAD</a></li>
+<li><a class="reference internal" href="#module-utils.deformableReg">deformableReg</a></li>
+<li><a class="reference internal" href="#module-utils.avgAff">avgAff</a></li>
+<li><a class="reference internal" href="#module-utils.invAff">invAff</a></li>
+<li><a class="reference internal" href="#module-utils.invDef">invDef</a></li>
+<li><a class="reference internal" href="#module-utils.resampleImg">resampleImg</a></li>
+<li><a class="reference internal" href="#module-utils.resampleBINImg">resampleBINImg</a></li>
+<li><a class="reference internal" href="#module-utils.UpdSform">UpdSform</a></li>
+<li><a class="reference internal" href="#rigidtodeformation">RigidToDeformation</a></li>
+<li><a class="reference internal" href="#module-utils.CppToDeformation">CppToDeformation</a></li>
+<li><a class="reference internal" href="#composetransformations">ComposeTransformations</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="Groupwise_class.html"
+                          title="previous chapter">Groupwise Class</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/functions.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Groupwise_class.html" title="Groupwise Class"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HN_atlas 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">NiftiReg Wrapper Functions</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, Poppy Nikou.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

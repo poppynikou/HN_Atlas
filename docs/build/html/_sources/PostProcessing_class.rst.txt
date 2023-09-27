@@ -1,0 +1,93 @@
+PostProcessing Class
+==================================
+
+PostProcessing Class which inherits from Img Class. Contains methods to postprocess the images after alignments.
+
+
+get_image_objects
+-------------------------------------
+.. automodule:: Classes.PostProcessing.get_image_objects
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _get_image_objects:
+
+calc_average_transformation
+-------------------------------------
+.. automodule:: Classes.PostProcessing.calc_average_transformation
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _calc_average_transformation:
+
+calc_average_transformation_affine
+-------------------------------------
+.. automodule:: Classes.PostProcessing.calc_average_transformation_affine
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _calc_average_transformation_affine:
+
+
+
+calc_average_transformation_def
+-------------------------------------
+.. automodule:: Classes.PostProcessing.calc_average_transformation_def
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _calc_average_transformation_def:
+
+
+calc_inv_average_transformation
+-------------------------------------
+.. automodule:: Classes.PostProcessing.calc_inv_average_transformation
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _calc_inv_average_transformation:
+
+
+composition
+-------------------------------------
+.. automodule:: Classes.PostProcessing.composition
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _composition:
+
+resample_imgs
+-------------------------------------
+.. automodule:: Classes.PostProcessing.resample_imgs
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _resample_imgs:
+
+
+calc_average_image
+-------------------------------------
+.. automodule:: Classes.PostProcessing.calc_average_image
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _calc_average_image:
+
+
+create_multichannel_imgs
+-------------------------------------
+.. automodule:: Classes.PostProcessing.create_multichannel_imgs
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _create_multichannel_imgs:
+

@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+
+<html lang="Python">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Data Class &#8212; HN_atlas 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PreProcessing Class" href="PreProcessing_class.html" />
+    <link rel="prev" title="Welcome to HN_atlas&#39;s documentation!" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="PreProcessing_class.html" title="PreProcessing Class"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to HN_atlas&#39;s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HN_atlas 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Data Class</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="data-class">
+<h1>Data Class<a class="headerlink" href="#data-class" title="Permalink to this headline">¶</a></h1>
+<p>This class sets the global paths to the images and transformations.</p>
+<section id="module-Classes.Data.__init__">
+<span id="init"></span><h2>__init__<a class="headerlink" href="#module-Classes.Data.__init__" title="Permalink to this headline">¶</a></h2>
+<p>Initialise the class. Set all the paths to niftireg executables</p>
+<dl class="field-list simple">
+<dt class="field-odd">param base_path</dt>
+<dd class="field-odd"><p>path to folder in which the batch folders are kept</p>
+</dd>
+<dt class="field-even">type base_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param batch</dt>
+<dd class="field-odd"><p>the batch number which you would like to process</p>
+</dd>
+<dt class="field-even">type batch</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param no_patients</dt>
+<dd class="field-odd"><p>the number of patients in that batch</p>
+</dd>
+<dt class="field-even">type no_patients</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param niftireg_path</dt>
+<dd class="field-odd"><p>folder in which the niftireg executables are stored</p>
+</dd>
+<dt class="field-even">type niftireg_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</section>
+<section id="module-Classes.Data.get_image_objects">
+<span id="get-image-objects"></span><h2>get_image_objects<a class="headerlink" href="#module-Classes.Data.get_image_objects" title="Permalink to this headline">¶</a></h2>
+<p>Get the key information from the nifti image. 
+Function reads in the nifti image and returns the image voxel value, the affine and the header.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param Img_path</dt>
+<dd class="field-odd"><p>path to the image to read in</p>
+</dd>
+<dt class="field-even">type Img_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">return img_obj</dt>
+<dd class="field-odd"><p>voxel values stored in the image</p>
+</dd>
+<dt class="field-even">rtype img_obj</dt>
+<dd class="field-even"><p>array</p>
+</dd>
+<dt class="field-odd">return img_affine</dt>
+<dd class="field-odd"><p>affine matrix associated with the image</p>
+</dd>
+<dt class="field-even">rtype img_affine</dt>
+<dd class="field-even"><p>Matrix</p>
+</dd>
+<dt class="field-odd">return img_header</dt>
+<dd class="field-odd"><p>header information associated with the image</p>
+</dd>
+<dt class="field-even">rtype img_header</dt>
+<dd class="field-even"><p>struct</p>
+</dd>
+</dl>
+<span class="target" id="id1"></span></section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Data Class</a><ul>
+<li><a class="reference internal" href="#module-Classes.Data.__init__">__init__</a></li>
+<li><a class="reference internal" href="#module-Classes.Data.get_image_objects">get_image_objects</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="index.html"
+                          title="previous chapter">Welcome to HN_atlas's documentation!</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="PreProcessing_class.html"
+                          title="next chapter">PreProcessing Class</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Data_class.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="PreProcessing_class.html" title="PreProcessing Class"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to HN_atlas&#39;s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HN_atlas 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Data Class</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, Poppy Nikou.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+Classes to run the Groupwise Registrations
+==================================
+This page provides documentation of the classes, their attributes and their function which are used to run the groupwise registration
+
+The groupwise registration algorithm works on the principle of applying one rigid, one affine and four multichannel deformable registrations.
+
+
+Imgs
+-------------------------------------
+.. autoclass:: Classes.Imgs
+   :members: batch_path, no_patients
+
+.. _Imgs:
+
+__init__
+-------------------------------------
+.. automodule:: Classes.Imgs.__init__
+    :members:
+    :undoc-members:
+    :inherited-members: 
+
+.. ___init__:
+
+set_itteration_no
+-------------------------------------
+.. automodule:: Classes.Imgs.set_itteration_no
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _set_itteration_no:
+

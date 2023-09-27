@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+
+<html lang="Python">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>PostProcessing Class &#8212; HN_atlas 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="NiftiReg Wrapper Functions" href="functions.html" />
+    <link rel="prev" title="PreProcessing Class" href="PreProcessing_class.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="functions.html" title="NiftiReg Wrapper Functions"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="PreProcessing_class.html" title="PreProcessing Class"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HN_atlas 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">PostProcessing Class</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="postprocessing-class">
+<h1>PostProcessing Class<a class="headerlink" href="#postprocessing-class" title="Permalink to this headline">¶</a></h1>
+<p>PostProcessing Class which inherits from Img Class. Contains methods to postprocess the images after alignments.</p>
+<section id="module-Classes.PostProcessing.get_image_objects">
+<span id="get-image-objects"></span><h2>get_image_objects<a class="headerlink" href="#module-Classes.PostProcessing.get_image_objects" title="Permalink to this headline">¶</a></h2>
+<p>Get the key information from the nifti image. 
+Function reads in the nifti image and returns the image voxel value, the affine and the header.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param Img_path</dt>
+<dd class="field-odd"><p>path to the image to read in</p>
+</dd>
+<dt class="field-even">type Img_path</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">return img_obj</dt>
+<dd class="field-odd"><p>voxel values stored in the image</p>
+</dd>
+<dt class="field-even">rtype img_obj</dt>
+<dd class="field-even"><p>array</p>
+</dd>
+<dt class="field-odd">return img_affine</dt>
+<dd class="field-odd"><p>affine matrix associated with the image</p>
+</dd>
+<dt class="field-even">rtype img_affine</dt>
+<dd class="field-even"><p>Matrix</p>
+</dd>
+<dt class="field-odd">return img_header</dt>
+<dd class="field-odd"><p>header information associated with the image</p>
+</dd>
+<dt class="field-even">rtype img_header</dt>
+<dd class="field-even"><p>struct</p>
+</dd>
+</dl>
+</section>
+<section id="module-Classes.PostProcessing.calc_average_transformation">
+<span id="calc-average-transformation"></span><span id="id1"></span><h2>calc_average_transformation<a class="headerlink" href="#module-Classes.PostProcessing.calc_average_transformation" title="Permalink to this headline">¶</a></h2>
+<p>Calls correct functions to calculate an average transformation for current iteration</p>
+</section>
+<section id="module-Classes.PostProcessing.calc_average_transformation_affine">
+<span id="calc-average-transformation-affine"></span><span id="id2"></span><h2>calc_average_transformation_affine<a class="headerlink" href="#module-Classes.PostProcessing.calc_average_transformation_affine" title="Permalink to this headline">¶</a></h2>
+<p>Calls niftireg wrapper function to calculate the average affine transformation for current iteration</p>
+</section>
+<section id="module-Classes.PostProcessing.calc_average_transformation_def">
+<span id="calc-average-transformation-def"></span><span id="id3"></span><h2>calc_average_transformation_def<a class="headerlink" href="#module-Classes.PostProcessing.calc_average_transformation_def" title="Permalink to this headline">¶</a></h2>
+<p>Calculates the average deformable transformation for current iteration</p>
+</section>
+<section id="module-Classes.PostProcessing.calc_inv_average_transformation">
+<span id="calc-inv-average-transformation"></span><span id="id4"></span><h2>calc_inv_average_transformation<a class="headerlink" href="#module-Classes.PostProcessing.calc_inv_average_transformation" title="Permalink to this headline">¶</a></h2>
+<p>Calls correct niftireg wrapper functions to calculate an inverse transformation for current iteration</p>
+</section>
+<section id="module-Classes.PostProcessing.composition">
+<span id="composition"></span><span id="id5"></span><h2>composition<a class="headerlink" href="#module-Classes.PostProcessing.composition" title="Permalink to this headline">¶</a></h2>
+<p>Loops over correct niftireg wrapper functions to calculate an inverse transformation for current iteration</p>
+</section>
+<section id="module-Classes.PostProcessing.resample_imgs">
+<span id="resample-imgs"></span><span id="id6"></span><h2>resample_imgs<a class="headerlink" href="#module-Classes.PostProcessing.resample_imgs" title="Permalink to this headline">¶</a></h2>
+<p>Loops over correct niftireg wrapper function to resample images and body masks</p>
+</section>
+<section id="module-Classes.PostProcessing.calc_average_image">
+<span id="calc-average-image"></span><span id="id7"></span><h2>calc_average_image<a class="headerlink" href="#module-Classes.PostProcessing.calc_average_image" title="Permalink to this headline">¶</a></h2>
+<p>Loops resampled images and calculates the average</p>
+</section>
+<section id="module-Classes.PostProcessing.create_multichannel_imgs">
+<span id="create-multichannel-imgs"></span><span id="id8"></span><h2>create_multichannel_imgs<a class="headerlink" href="#module-Classes.PostProcessing.create_multichannel_imgs" title="Permalink to this headline">¶</a></h2>
+<p>Function which takes in the CT and then create a multichannel CT
+The first channel is the CT and the second channel is a bone segmentation
+Bone segmentation is created by thresholding - thresholding region given as input to function
+:param threshold_region: The Haunsfield unit threshold in which the images should be clipped
+:type base_path: list</p>
+<span class="target" id="id9"></span></section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">PostProcessing Class</a><ul>
+<li><a class="reference internal" href="#module-Classes.PostProcessing.get_image_objects">get_image_objects</a></li>
+<li><a class="reference internal" href="#module-Classes.PostProcessing.calc_average_transformation">calc_average_transformation</a></li>
+<li><a class="reference internal" href="#module-Classes.PostProcessing.calc_average_transformation_affine">calc_average_transformation_affine</a></li>
+<li><a class="reference internal" href="#module-Classes.PostProcessing.calc_average_transformation_def">calc_average_transformation_def</a></li>
+<li><a class="reference internal" href="#module-Classes.PostProcessing.calc_inv_average_transformation">calc_inv_average_transformation</a></li>
+<li><a class="reference internal" href="#module-Classes.PostProcessing.composition">composition</a></li>
+<li><a class="reference internal" href="#module-Classes.PostProcessing.resample_imgs">resample_imgs</a></li>
+<li><a class="reference internal" href="#module-Classes.PostProcessing.calc_average_image">calc_average_image</a></li>
+<li><a class="reference internal" href="#module-Classes.PostProcessing.create_multichannel_imgs">create_multichannel_imgs</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="PreProcessing_class.html"
+                          title="previous chapter">PreProcessing Class</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="functions.html"
+                          title="next chapter">NiftiReg Wrapper Functions</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/PostProcessing_class.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="functions.html" title="NiftiReg Wrapper Functions"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="PreProcessing_class.html" title="PreProcessing Class"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">HN_atlas 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">PostProcessing Class</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, Poppy Nikou.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>

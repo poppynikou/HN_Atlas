@@ -1,0 +1,38 @@
+Imgs Class
+==================================
+
+This class sets the global paths to the images and transformations.
+The groupwise registration algorithm is an itterative process. 
+
+The code assumes that the data is stored in a folder 'BATCH_X'. 
+All initial images and masks must be stored in a folder 'Iteration_0'.
+The code will then generate the remaining folders. 
+
+
+__init__
+-------------------------------------
+.. automodule:: Classes.Imgs.__init__
+    :members:
+    :undoc-members:
+    :inherited-members: 
+
+.. ___init__:
+
+set_itteration_no
+-------------------------------------
+.. automodule:: Classes.Imgs.set_itteration_no
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _set_itteration_no:
+
+set_nifti_reg
+-------------------------------------
+.. automodule:: Classes.Imgs.set_nifti_reg
+    :members:
+    :undoc-members:
+    :inherited-members: 
+    
+.. _set_nifti_reg:
+
