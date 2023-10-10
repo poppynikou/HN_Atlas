@@ -1,23 +1,20 @@
 import os 
-from utils import *
+from DicomRTTool.ReaderWriter import DicomReaderWriter
+from DicomRTTool.ReaderWriter import ROIAssociationClass
+import SimpleITK as sitk 
 
 """
 Code for converting the original DICOM files and LIMBUSAI generated RT structs into binary nifti files
 The code assumes that you have each of the patient data stored in a particular folder
 The code will save each structure as an individual binary file 
-
 """
 
-# no of patients to convert
-no_patients = 3
-# path to the dicom data 
-base_path = 'C:/Users/poppy/Documents/Test_LIMBUS/Contours/'
+path_to_patient_folders = 'D:/HNSCC/ARCHIVE/2023_10_08'
+patient_folders = [file for file in os.listdir(path_to_patient_folders) if file[0:5]=='HNSCC']
 
+for patient_folder in patient_folders:
 
-folders = os.listdir(base_path)
-
-for index in range(0,no_patients):
-    patient_path = base_path + '/' + folders[index]
+    patient_path = path_to_patient_folders + '/' + patient_folder + '/DICOM/'
 
     try:
 
@@ -26,10 +23,11 @@ for index in range(0,no_patients):
         
         all_rois = dicom_Reader.return_rois(print_rois=False) 
         
-        filename = patient_path + '/CT_'+str(index)+'.nii.gz'
+
+        nifti_img_path = path_to_patient_folders + '/' + patient_folder + '/NIFTI_IMGS/CT.nii.gz'
         dicom_Reader.get_images()
         dicom_sitk_handle = dicom_Reader.dicom_handle
-        sitk.WriteImage(dicom_sitk_handle, filename) 
+        sitk.WriteImage(dicom_sitk_handle, nifti_img_path) 
 
         
         for roi in all_rois:
@@ -47,7 +45,7 @@ for index in range(0,no_patients):
                 mask_sitk_handle = dicom_Reader.annotation_handle
 
                 # saves as boolean mask 
-                roi_name =  patient_path + '/BIN_'+ str(roi) + '_'+str(index)+'.nii.gz'
+                roi_name =  path_to_patient_folders + '/' + patient_folder  + '/NIFTI_LIMBUS/BIN_'+ str(roi) + '.nii.gz'
                 sitk.WriteImage(mask_sitk_handle, roi_name)
             except:
                 pass

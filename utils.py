@@ -1,9 +1,6 @@
 import os
 import numpy as np 
 
-
-
-
 def rigidReg(reg_aladin_path, ref_img, float_img, affine_matrix, resampled_img, RigOnly):
 
     """Perform a rigid registration using Aladin registration algorithm

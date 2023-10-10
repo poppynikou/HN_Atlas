@@ -6,7 +6,6 @@ import nibabel as nib
 Script takes in nifti images, spits out a T4 vertabra segmentation and uses segmentation to mask the image 
 """
 
-
 def get_image_objects(Img_path):
     
     """Get the key information from the nifti image. 
@@ -30,7 +29,7 @@ def get_image_objects(Img_path):
     return img_obj, img_affine, img_header
 
 def get_segmentation(input_img, output_segmentation):
-    os.system('TotalSegmentator -i ' + str(input_img) + ' -o ' + str(output_segmentation) + ' --fast')# --roi_subset vertebrae_T4')
+    os.system('TotalSegmentator -i ' + str(input_img) + ' -o ' + str(output_segmentation) + ' --fast')
 
 def get_cropping_slice(vertabrae_segmentation):
 
@@ -62,13 +61,19 @@ def mask_anatomy(input_img, vertabrae_segmentation, masked_img):
     nib.save(newNiftiObj, masked_img)
 
 
+path_to_patient_folders = 'D:/HNSCC/ARCHIVE/2023_10_08'
+patient_folders = [file for file in os.listdir(path_to_patient_folders) if file[0:5]=='HNSCC']
 
-for index, patient in enumerate([2,3]):
+for patient_folder in patient_folders:
+    if os.path.exists(path_to_patient_folders + '/' + patient_folder + '/NIFTI_IMGS/CT.nii.gz'):
+        input_img = path_to_patient_folders + '/' + patient_folder + '/NIFTI_IMGS/CT.nii.gz'
+        output_path = path_to_patient_folders + '/' + patient_folder + '/NIFTI_TOTALSEG/'
+        if len(os.listdir(output_path)) ==0:
+            get_segmentation(input_img, output_path)
+            try:
+                vertabrae_segmentation = path_to_patient_folders + '/' + patient_folder + '/NIFTI_TOTALSEG/vertebrae_T4.nii.gz'
+                masked_img = path_to_patient_folders + '/' + patient_folder + '/NIFTI_IMGS/MASKED_CT.nii.gz'
+                mask_anatomy(input_img, vertabrae_segmentation, masked_img)
 
-    input_img = 'C:/Users/poppy/Documents/Test_LIMBUS/Contours/'+str(patient)+'/NIFTI_IMGS/CT_'+str(patient -1)+'.nii.gz'
-    output_path = 'C:/Users/poppy/Documents/Test_LIMBUS/Contours/'+str(patient)+'/TOTALSEGMENTATOR'
-    get_segmentation(input_img, output_path)
-    vertabrae_segmentation = 'C:/Users/poppy/Documents/Test_LIMBUS/Contours/'+str(patient)+'/TOTALSEGMENTATOR/vertebrae_T4.nii.gz'
-    masked_img = 'C:/Users/poppy/Documents/Test_LIMBUS/Contours/'+str(patient)+'/NIFTI_IMGS/MASKED_CT_'+str(patient -1)+'.nii.gz'
-    mask_anatomy(input_img, vertabrae_segmentation, masked_img)
-
+            except:
+                pass
