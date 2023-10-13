@@ -4,32 +4,30 @@ from Classes import *
 from utils import *
 import sys
 
-#path to niftireg executables 
-niftireg_path = sys.argv[1]
+# base path to where the batches of patient images are stored
+base_path = sys.argv[1]
 # csv path for reproprocessing
 current_directory = sys.argv[2]
-# base path to where the batches of patient images are stored
-base_path = sys.argv[3]
 
 #number of patients 
-no_patients = 3
+no_patients = 4
 # batch number - the batch which you are working on 
 batch = 1
 #initial reference patient 
-ref_patient = 18
+ref_patient = 0
 
 # csv path for reproprocessing
 preprocessing_data = current_directory +'/preprocessing.csv'
 
-HNData = Data(base_path, batch, no_patients,niftireg_path)
+HNData = Data(base_path, batch, no_patients)
 
 Preprocess = PreProcessing(base_path, batch, no_patients)
 patient_nos = Preprocess.get_patient_nos()
 Preprocess.mask_CT(preprocessing_data,patient_nos)
-Preprocess.mask_GTV(patient_nos)
-Preprocess.create_body_mask(patient_nos)
+#Preprocess.mask_GTV(patient_nos)
+#Preprocess.create_body_mask(patient_nos)
 
-Groupwise_ = Groupwise(base_path, batch, no_patients, patient_nos, niftireg_path)
+Groupwise_ = Groupwise(base_path, batch, no_patients, patient_nos)
 Groupwise_.set_initial_ref_patient(ref_patient)
 Groupwise_.set_itteration_no(itteration=0)
 Groupwise_.InitialAlignment()

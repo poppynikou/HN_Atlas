@@ -12,7 +12,7 @@ class Data():
 
     """Data Class. Contains methods to set the global paths for all other classes, to be used iteratively in the groupwise algorithm."""
 
-    def __init__(self, base_path, batch, no_patients, niftireg_path):
+    def __init__(self, base_path, batch, no_patients):
         """Initialise the class. Set all the paths to niftireg executables
 
         :param base_path: path to folder in which the batch folders are kept 
@@ -30,11 +30,11 @@ class Data():
         # no of patients to process
         self.no_patients = no_patients
 
-        self.reg_transform = niftireg_path +'/reg_transform.exe'
-        self.reg_average = niftireg_path +'/reg_average.exe'
-        self.reg_aladin = niftireg_path +'/reg_aladin.exe'
-        self.reg_resample = niftireg_path +'/reg_resample.exe'
-        self.reg_f3d = niftireg_path +'/reg_f3d.exe'
+        self.reg_transform ='reg_transform'
+        self.reg_average = 'reg_average'
+        self.reg_aladin = 'reg_aladin'
+        self.reg_resample = 'reg_resample'
+        self.reg_f3d = 'reg_f3d'
 
     def get_image_objects(self,Img_path):
     
@@ -63,9 +63,9 @@ class Data():
 
 class Groupwise(Data):
 
-    def __init__(self, base_path, batch, no_patients, patient_nos, niftireg_path):
+    def __init__(self, base_path, batch, no_patients, patient_nos):
     
-        Data.__init__(self, base_path, batch, no_patients, niftireg_path)
+        Data.__init__(self, base_path, batch, no_patients)
         self.patient_nos = patient_nos
         return
 
@@ -91,8 +91,6 @@ class Groupwise(Data):
             os.mkdir(self.current_iteration_path)
         # previous folder
         self.prev_iteration_path = self.batch_path + '/Iteration_' + str(self.itteration-1)  
-    
-        
 
         
         if itteration != 0:
@@ -413,7 +411,7 @@ class PreProcessing(Data):
 
     def __init__(self, base_path, batch, no_patients):
 
-        Data.__init__(self, base_path, batch, no_patients, '')
+        Data.__init__(self, base_path, batch, no_patients)
         self.current_iteration_path = self.batch_path + '/Iteration_0'
         return
     
@@ -441,7 +439,7 @@ class PreProcessing(Data):
 
             min_y = int(slices['Min_y'].loc[slices['HN_Patient'] == 'HN_' + str(int(patient_no))])# excess air in front of patient
             max_y = int(slices['Max_y'].loc[slices['HN_Patient'] == 'HN_' + str(int(patient_no))])# radiotherapy couch
-            min_z = int(slices['Min_z'].loc[slices['HN_Patient'] == 'HN_' + str(int(patient_no))])# anything under C11
+            #min_z = int(slices['Min_z'].loc[slices['HN_Patient'] == 'HN_' + str(int(patient_no))])# anything under C4
             
             # read in data 
             img_data, img_affine, img_header = self.get_image_objects(img_path)
@@ -452,7 +450,7 @@ class PreProcessing(Data):
             # mask the CT 
             img_data_copy[:,0:min_y,:] = np.NaN 
             img_data_copy[:,max_y:y,:] = np.NaN 
-            img_data_copy[:,:,0:min_z] = np.NaN  
+            #img_data_copy[:,:,0:min_z] = np.NaN  
 
             # overide the CT 
             newNiftiObj = nib.Nifti1Image(img_data_copy, img_affine, img_header)

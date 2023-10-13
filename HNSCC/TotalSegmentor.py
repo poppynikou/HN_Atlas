@@ -77,3 +77,4 @@ for patient_folder in patient_folders:
 
             except:
                 pass
+            
