@@ -1,0 +1,1539 @@
+[reg_aladin] 
+[reg_aladin] Command line:
+[reg_aladin] 	 reg_aladin -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -aff /home/pnikou/Documents/Data/BATCH_1/Iteration_0/transformation_0.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_0/InitialAlignment_0.nii.gz -omp 12 -rigOnly
+[reg_aladin] 
+[reg_aladin] OpenMP is used with 12 thread(s)
+[reg_aladin_sym] Parameters
+[reg_aladin_sym] Platform: cpu_platform
+[reg_aladin_sym] Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Maximum iteration number: 5
+[reg_aladin_sym] 	(10 during the first level)
+[reg_aladin_sym] Percentage of blocks: 50 %
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Current level 1 / 3
+[reg_aladin_sym] reference image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] floating image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [32 32 16]
+[reg_aladin_sym] Backward Block number = [32 32 16]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+1	0	0	0
+0	1	-3.053113e-16	0
+0	-3.330669e-16	1	0
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+1	0	0	0
+0	1	-3.053113e-16	0
+0	-3.330669e-16	1	0
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 2 / 3
+[reg_aladin_sym] reference image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] floating image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [64 64 16]
+[reg_aladin_sym] Backward Block number = [64 64 16]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	0
+0	1	-3.053113e-16	0
+0	-3.330669e-16	1	0
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	0
+0	1	-3.053113e-16	0
+0	-3.330669e-16	1	0
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+1	0	-5.551115e-17	3.944305e-31
+6.938894e-18	1	-2.220446e-16	1.577722e-30
+-5.551115e-17	0	1	-1.421085e-14
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+1	0	-5.551115e-17	3.944305e-31
+6.938894e-18	1	-2.220446e-16	1.577722e-30
+-5.551115e-17	0	1	-1.421085e-14
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 3 / 3
+[reg_aladin_sym] reference image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] floating image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [128 128 31]
+[reg_aladin_sym] Backward Block number = [128 128 31]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	-5.551115e-17	3.944305e-31
+6.938894e-18	1	-2.220446e-16	1.577722e-30
+-5.551115e-17	0	1	-1.421085e-14
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	-5.551115e-17	3.944305e-31
+6.938894e-18	1	-2.220446e-16	1.577722e-30
+-5.551115e-17	0	1	-1.421085e-14
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+1	-1.92593e-33	2.775558e-17	0
+0	1	-1.040834e-16	0
+0	-1.387779e-16	1	0
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+1	-1.92593e-33	2.775558e-17	0
+0	1	-1.040834e-16	0
+0	-1.387779e-16	1	0
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin] Registration performed in 4 min 39 sec
+[reg_aladin] Have a good day !
+[reg_aladin] 
+[reg_aladin] Command line:
+[reg_aladin] 	 reg_aladin -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_1.nii.gz -aff /home/pnikou/Documents/Data/BATCH_1/Iteration_0/transformation_1.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_0/InitialAlignment_1.nii.gz -omp 12 -rigOnly
+[reg_aladin] 
+[reg_aladin] OpenMP is used with 12 thread(s)
+[reg_aladin_sym] Parameters
+[reg_aladin_sym] Platform: cpu_platform
+[reg_aladin_sym] Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_1.nii.gz
+[reg_aladin_sym] 	512x512x156 voxels
+[reg_aladin_sym] 	0.976562x0.976562x2.5 mm
+[reg_aladin_sym] Maximum iteration number: 5
+[reg_aladin_sym] 	(10 during the first level)
+[reg_aladin_sym] Percentage of blocks: 50 %
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Current level 1 / 3
+[reg_aladin_sym] reference image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] floating image size: 	128x128x39 voxels	3.90625x3.90625x10 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [32 32 16]
+[reg_aladin_sym] Backward Block number = [32 32 10]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	5
+0	1	0	-56
+0	0	1	161.4
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	-5
+0	1	0	56
+0	0	1	-161.4
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999864	0.002459644	0.004606878	5.106386
+-0.002206934	0.9985342	-0.05407881	-20.12373
+-0.004733139	0.05406789	0.998526	178.5049
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999864	-0.002206935	-0.00473314	-4.30584
+0.002459644	0.9985343	0.0540679	10.43029
+0.004606877	-0.0540788	0.9985261	-179.3536
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 2 / 3
+[reg_aladin_sym] reference image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] floating image size: 	256x256x78 voxels	1.95312x1.95312x5 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [64 64 16]
+[reg_aladin_sym] Backward Block number = [64 64 20]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9999864	0.002459644	0.004606878	5.106386
+-0.002206934	0.9985342	-0.05407881	-20.12373
+-0.004733139	0.05406789	0.998526	178.5049
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.9999864	-0.002206935	-0.00473314	-4.30584
+0.002459644	0.9985343	0.0540679	10.43029
+0.004606877	-0.0540788	0.9985261	-179.3536
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999824	0.002002865	0.00558006	5.149773
+-0.001660105	0.9981506	-0.06076723	-20.16193
+-0.005691447	0.06075689	0.9981363	178.3286
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999824	-0.001660105	-0.005691448	-4.168205
+0.002002865	0.9981506	0.06075689	9.279636
+0.005580058	-0.06076723	0.9981364	-179.2502
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 3 / 3
+[reg_aladin_sym] reference image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] floating image size: 	512x512x156 voxels	0.976562x0.976562x2.5 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [128 128 31]
+[reg_aladin_sym] Backward Block number = [128 128 39]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9999824	0.002002865	0.00558006	5.149773
+-0.001660105	0.9981506	-0.06076723	-20.16193
+-0.005691447	0.06075689	0.9981363	178.3286
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.9999824	-0.001660105	-0.005691448	-4.168205
+0.002002865	0.9981506	0.06075689	9.279636
+0.005580058	-0.06076723	0.9981364	-179.2502
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999537	0.00237374	0.009321753	4.877394
+-0.00182684	0.9983006	-0.05824575	-20.4052
+-0.009444172	0.05822603	0.9982588	177.3891
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999537	-0.001826838	-0.009444172	-3.239152
+0.002373742	0.9983006	0.05822603	10.03028
+0.009321752	-0.05824575	0.9982587	-178.3142
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin] Registration performed in 5 min 30 sec
+[reg_aladin] Have a good day !
+[reg_aladin] 
+[reg_aladin] Command line:
+[reg_aladin] 	 reg_aladin -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_6.nii.gz -aff /home/pnikou/Documents/Data/BATCH_1/Iteration_0/transformation_6.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_0/InitialAlignment_6.nii.gz -omp 12 -rigOnly
+[reg_aladin] 
+[reg_aladin] OpenMP is used with 12 thread(s)
+[reg_aladin_sym] Parameters
+[reg_aladin_sym] Platform: cpu_platform
+[reg_aladin_sym] Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_6.nii.gz
+[reg_aladin_sym] 	512x512x163 voxels
+[reg_aladin_sym] 	0.976562x0.976562x2.5 mm
+[reg_aladin_sym] Maximum iteration number: 5
+[reg_aladin_sym] 	(10 during the first level)
+[reg_aladin_sym] Percentage of blocks: 50 %
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Current level 1 / 3
+[reg_aladin_sym] reference image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] floating image size: 	128x128x41 voxels	3.90625x3.90625x10 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [32 32 16]
+[reg_aladin_sym] Backward Block number = [32 32 11]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	5
+0	1	0	-10
+0	0	1	-603.25
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	-5
+0	1	0	10
+0	0	1	603.25
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999776	0.006608167	0.001033864	1.503976
+-0.006597233	0.9999257	-0.01024379	4.941779
+-0.00110148	0.01023674	0.999947	-600.2316
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999776	-0.006597233	-0.00110148	-2.132483
+0.006608167	0.9999257	0.01023674	1.193063
+0.001033865	-0.01024379	0.999947	600.2489
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 2 / 3
+[reg_aladin_sym] reference image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] floating image size: 	256x256x82 voxels	1.95312x1.95312x5 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [64 64 16]
+[reg_aladin_sym] Backward Block number = [64 64 21]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9999776	0.006608167	0.001033864	1.503976
+-0.006597233	0.9999257	-0.01024379	4.941779
+-0.00110148	0.01023674	0.999947	-600.2316
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.9999776	-0.006597233	-0.00110148	-2.132483
+0.006608167	0.9999257	0.01023674	1.193063
+0.001033865	-0.01024379	0.999947	600.2489
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999671	0.008105136	-0.0003755709	1.57157
+-0.008111863	0.9996725	-0.02426837	5.794343
+0.0001787512	0.02427061	0.9997054	-593.8517
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.999967	-0.008111862	0.0001787495	-1.418365
+0.008105136	0.9996725	0.02427061	8.607961
+-0.0003755726	-0.02426837	0.9997054	593.8179
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 3 / 3
+[reg_aladin_sym] reference image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] floating image size: 	512x512x163 voxels	0.976562x0.976562x2.5 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [128 128 31]
+[reg_aladin_sym] Backward Block number = [128 128 41]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9999671	0.008105136	-0.0003755709	1.57157
+-0.008111863	0.9996725	-0.02426837	5.794343
+0.0001787512	0.02427061	0.9997054	-593.8517
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.999967	-0.008111862	0.0001787495	-1.418365
+0.008105136	0.9996725	0.02427061	8.607961
+-0.0003755726	-0.02426837	0.9997054	593.8179
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999695	0.007762621	0.0007675117	1.447282
+-0.007751096	0.9998717	-0.01402457	5.067517
+-0.0008762802	0.01401819	0.9999014	-597.8277
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999696	-0.007751096	-0.0008762805	-1.931824
+0.007762621	0.9998716	0.01401819	3.302362
+0.0007675113	-0.01402457	0.9999013	597.8386
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin] Registration performed in 5 min 40 sec
+[reg_aladin] Have a good day !
+[reg_aladin] 
+[reg_aladin] Command line:
+[reg_aladin] 	 reg_aladin -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_11.nii.gz -aff /home/pnikou/Documents/Data/BATCH_1/Iteration_0/transformation_11.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_0/InitialAlignment_11.nii.gz -omp 12 -rigOnly
+[reg_aladin] 
+[reg_aladin] OpenMP is used with 12 thread(s)
+[reg_aladin_sym] Parameters
+[reg_aladin_sym] Platform: cpu_platform
+[reg_aladin_sym] Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_11.nii.gz
+[reg_aladin_sym] 	512x512x131 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Maximum iteration number: 5
+[reg_aladin_sym] 	(10 during the first level)
+[reg_aladin_sym] Percentage of blocks: 50 %
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Current level 1 / 3
+[reg_aladin_sym] reference image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] floating image size: 	128x128x33 voxels	3.90625x3.90625x12 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [32 32 16]
+[reg_aladin_sym] Backward Block number = [32 32 9]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	4
+0	1	0	-3
+0	0	1	-666
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	-4
+0	1	0	3
+0	0	1	666
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999554	0.0004477626	0.009433132	0.7950096
+3.30584e-05	0.9987032	-0.05090985	16.60045
+-0.009443695	0.05090788	0.9986587	-649.8671
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999554	3.305872e-05	-0.009443694	-6.932669
+0.000447763	0.9987033	0.05090789	16.50408
+0.009433131	-0.05090984	0.9986587	649.833
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 2 / 3
+[reg_aladin_sym] reference image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] floating image size: 	256x256x66 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [64 64 16]
+[reg_aladin_sym] Backward Block number = [64 64 17]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9999554	0.0004477626	0.009433132	0.7950096
+3.30584e-05	0.9987032	-0.05090985	16.60045
+-0.009443695	0.05090788	0.9986587	-649.8671
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.9999554	3.305872e-05	-0.009443694	-6.932669
+0.000447763	0.9987033	0.05090789	16.50408
+0.009433131	-0.05090984	0.9986587	649.833
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999694	-0.001794917	-0.007612582	1.852089
+0.001381121	0.998539	-0.05401813	16.70168
+0.007698418	0.05400596	0.998511	-650.7881
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999694	0.001381119	0.007698418	3.13494
+-0.001794918	0.998539	0.05400597	18.47249
+-0.007612582	-0.05401813	0.998511	650.7354
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 3 / 3
+[reg_aladin_sym] reference image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] floating image size: 	512x512x131 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [128 128 31]
+[reg_aladin_sym] Backward Block number = [128 128 33]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9999694	-0.001794917	-0.007612582	1.852089
+0.001381121	0.998539	-0.05401813	16.70168
+0.007698418	0.05400596	0.998511	-650.7881
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.9999694	0.001381119	0.007698418	3.13494
+-0.001794918	0.998539	0.05400597	18.47249
+-0.007612582	-0.05401813	0.998511	650.7354
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999852	-0.001930442	-0.005090744	1.709047
+0.001659764	0.9986117	-0.05264903	16.45611
+0.005185311	0.05263979	0.9986001	-652.5014
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999852	0.001659764	0.005185312	1.647089
+-0.001930442	0.9986117	0.05263979	17.91757
+-0.005090742	-0.05264902	0.9986001	652.4631
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin] Registration performed in 5 min 2 sec
+[reg_aladin] Have a good day !
+[reg_aladin] 
+[reg_aladin] Command line:
+[reg_aladin] 	 reg_aladin -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -aff /home/pnikou/Documents/Data/BATCH_1/Iteration_1/transformation_0.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_1/resampled_img_0.nii.gz -omp 12 -rigOnly
+[reg_aladin] 
+[reg_aladin] OpenMP is used with 12 thread(s)
+[reg_aladin_sym] Parameters
+[reg_aladin_sym] Platform: cpu_platform
+[reg_aladin_sym] Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Maximum iteration number: 5
+[reg_aladin_sym] 	(10 during the first level)
+[reg_aladin_sym] Percentage of blocks: 50 %
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Current level 1 / 3
+[reg_aladin_sym] reference image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] floating image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [32 32 16]
+[reg_aladin_sym] Backward Block number = [32 32 16]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+1	0	0	0
+0	1	-3.053113e-16	0
+0	-3.330669e-16	1	0
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+1	0	0	0
+0	1	-3.053113e-16	0
+0	-3.330669e-16	1	0
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 2 / 3
+[reg_aladin_sym] reference image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] floating image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [64 64 16]
+[reg_aladin_sym] Backward Block number = [64 64 16]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	0
+0	1	-3.053113e-16	0
+0	-3.330669e-16	1	0
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	0
+0	1	-3.053113e-16	0
+0	-3.330669e-16	1	0
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+1	0	-5.551115e-17	3.944305e-31
+6.938894e-18	1	-2.220446e-16	1.577722e-30
+-5.551115e-17	0	1	-1.421085e-14
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+1	0	-5.551115e-17	3.944305e-31
+6.938894e-18	1	-2.220446e-16	1.577722e-30
+-5.551115e-17	0	1	-1.421085e-14
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 3 / 3
+[reg_aladin_sym] reference image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] floating image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [128 128 31]
+[reg_aladin_sym] Backward Block number = [128 128 31]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	-5.551115e-17	3.944305e-31
+6.938894e-18	1	-2.220446e-16	1.577722e-30
+-5.551115e-17	0	1	-1.421085e-14
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	-5.551115e-17	3.944305e-31
+6.938894e-18	1	-2.220446e-16	1.577722e-30
+-5.551115e-17	0	1	-1.421085e-14
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+1	-1.92593e-33	2.775558e-17	0
+0	1	-1.040834e-16	0
+0	-1.387779e-16	1	0
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+1	-1.92593e-33	2.775558e-17	0
+0	1	-1.040834e-16	0
+0	-1.387779e-16	1	0
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin] Registration performed in 4 min 49 sec
+[reg_aladin] Have a good day !
+[reg_aladin] 
+[reg_aladin] Command line:
+[reg_aladin] 	 reg_aladin -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_1.nii.gz -aff /home/pnikou/Documents/Data/BATCH_1/Iteration_1/transformation_1.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_1/resampled_img_1.nii.gz -omp 12 -rigOnly
+[reg_aladin] 
+[reg_aladin] OpenMP is used with 12 thread(s)
+[reg_aladin_sym] Parameters
+[reg_aladin_sym] Platform: cpu_platform
+[reg_aladin_sym] Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_1.nii.gz
+[reg_aladin_sym] 	512x512x156 voxels
+[reg_aladin_sym] 	0.976562x0.976562x2.5 mm
+[reg_aladin_sym] Maximum iteration number: 5
+[reg_aladin_sym] 	(10 during the first level)
+[reg_aladin_sym] Percentage of blocks: 50 %
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Current level 1 / 3
+[reg_aladin_sym] reference image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] floating image size: 	128x128x39 voxels	3.90625x3.90625x10 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [32 32 16]
+[reg_aladin_sym] Backward Block number = [32 32 10]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	-0.0793314
+0	1	0	-33.14676
+0	0	1	-10.65185
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	0.0793314
+0	1	0	33.14676
+0	0	1	10.65185
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999709	0.005317072	-0.005473142	0.7050372
+-0.005301019	0.9999816	0.002943714	0.09873813
+0.005488693	-0.002914612	0.9999807	1.155845
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999709	-0.005301017	0.005488693	-0.7108373
+0.005317074	0.9999816	-0.002914615	-0.09911621
+-0.005473142	0.002943711	0.9999807	-1.152254
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 2 / 3
+[reg_aladin_sym] reference image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] floating image size: 	256x256x78 voxels	1.95312x1.95312x5 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [64 64 16]
+[reg_aladin_sym] Backward Block number = [64 64 20]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9999709	0.005317072	-0.005473142	0.7050372
+-0.005301019	0.9999816	0.002943714	0.09873813
+0.005488693	-0.002914612	0.9999807	1.155845
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.9999709	-0.005301017	0.005488693	-0.7108373
+0.005317074	0.9999816	-0.002914615	-0.09911621
+-0.005473142	0.002943711	0.9999807	-1.152254
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999824	0.002814787	-0.005224138	0.7461367
+-0.002822945	0.9999948	-0.00155497	-0.01150814
+0.005219734	0.001569689	0.9999851	0.9059387
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999824	-0.002822945	0.005219735	-0.7508849
+0.002814787	0.9999948	0.00156969	0.007985824
+-0.005224139	-0.001554969	0.9999852	-0.9020452
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 3 / 3
+[reg_aladin_sym] reference image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] floating image size: 	512x512x156 voxels	0.976562x0.976562x2.5 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [128 128 31]
+[reg_aladin_sym] Backward Block number = [128 128 39]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9999824	0.002814787	-0.005224138	0.7461367
+-0.002822945	0.9999948	-0.00155497	-0.01150814
+0.005219734	0.001569689	0.9999851	0.9059387
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.9999824	-0.002822945	0.005219735	-0.7508849
+0.002814787	0.9999948	0.00156969	0.007985824
+-0.005224139	-0.001554969	0.9999852	-0.9020452
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999856	0.003157532	-0.004340365	0.6407551
+-0.003151168	0.999994	0.001472271	-0.3332169
+0.004344988	-0.001458572	0.9999895	0.06800155
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999856	-0.003151168	0.004344987	-0.6420913
+0.003157532	0.999994	-0.001458573	0.3312909
+-0.004340366	0.001472271	0.9999894	-0.06472907
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin] Registration performed in 5 min 32 sec
+[reg_aladin] Have a good day !
+[reg_aladin] 
+[reg_aladin] Command line:
+[reg_aladin] 	 reg_aladin -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_6.nii.gz -aff /home/pnikou/Documents/Data/BATCH_1/Iteration_1/transformation_6.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_1/resampled_img_6.nii.gz -omp 12 -rigOnly
+[reg_aladin] 
+[reg_aladin] OpenMP is used with 12 thread(s)
+[reg_aladin_sym] Parameters
+[reg_aladin_sym] Platform: cpu_platform
+[reg_aladin_sym] Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_6.nii.gz
+[reg_aladin_sym] 	512x512x163 voxels
+[reg_aladin_sym] 	0.976562x0.976562x2.5 mm
+[reg_aladin_sym] Maximum iteration number: 5
+[reg_aladin_sym] 	(10 during the first level)
+[reg_aladin_sym] Percentage of blocks: 50 %
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Current level 1 / 3
+[reg_aladin_sym] reference image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] floating image size: 	128x128x41 voxels	3.90625x3.90625x10 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [32 32 16]
+[reg_aladin_sym] Backward Block number = [32 32 11]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	4.075226
+0	1	0	-14.36738
+0	0	1	-4.403648
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	-4.075226
+0	1	0	14.36738
+0	0	1	4.403648
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999685	0.007570991	0.002397048	0.5093925
+-0.007614306	0.9997979	0.01860912	2.218886
+-0.002255674	-0.01862678	0.999824	1.089144
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999685	-0.007614307	-0.002255674	-0.4900244
+0.007570989	0.9997978	-0.01862678	-2.202006
+0.002397048	0.01860912	0.9998239	-1.131464
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 2 / 3
+[reg_aladin_sym] reference image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] floating image size: 	256x256x82 voxels	1.95312x1.95312x5 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [64 64 16]
+[reg_aladin_sym] Backward Block number = [64 64 21]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9999685	0.007570991	0.002397048	0.5093925
+-0.007614306	0.9997979	0.01860912	2.218886
+-0.002255674	-0.01862678	0.999824	1.089144
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.9999685	-0.007614307	-0.002255674	-0.4900244
+0.007570989	0.9997978	-0.01862678	-2.202006
+0.002397048	0.01860912	0.9998239	-1.131464
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999108	0.00863799	0.01018366	0.1480571
+-0.00880715	0.999822	0.01668475	2.491375
+-0.01003772	-0.01677295	0.9998089	9.340899
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999108	-0.008807149	-0.01003772	-0.03234063
+0.00863799	0.999822	-0.01677295	-2.335536
+0.01018366	0.01668475	0.9998089	-9.382191
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 3 / 3
+[reg_aladin_sym] reference image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] floating image size: 	512x512x163 voxels	0.976562x0.976562x2.5 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [128 128 31]
+[reg_aladin_sym] Backward Block number = [128 128 41]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9999108	0.00863799	0.01018366	0.1480571
+-0.00880715	0.999822	0.01668475	2.491375
+-0.01003772	-0.01677295	0.9998089	9.340899
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.9999108	-0.008807149	-0.01003772	-0.03234063
+0.00863799	0.999822	-0.01677295	-2.335536
+0.01018366	0.01668475	0.9998089	-9.382191
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999617	0.008513625	0.00205036	0.7584708
+-0.008546993	0.9998214	0.01685515	2.457901
+-0.001906496	-0.01687203	0.9998558	11.31006
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999617	-0.008546991	-0.001906496	-0.7158715
+0.008513627	0.9998214	-0.01687203	-2.273096
+0.002050361	0.01685515	0.9998559	-11.35141
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin] Registration performed in 5 min 35 sec
+[reg_aladin] Have a good day !
+[reg_aladin] 
+[reg_aladin] Command line:
+[reg_aladin] 	 reg_aladin -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_11.nii.gz -aff /home/pnikou/Documents/Data/BATCH_1/Iteration_1/transformation_11.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_1/resampled_img_11.nii.gz -omp 12 -rigOnly
+[reg_aladin] 
+[reg_aladin] OpenMP is used with 12 thread(s)
+[reg_aladin_sym] Parameters
+[reg_aladin_sym] Platform: cpu_platform
+[reg_aladin_sym] Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_11.nii.gz
+[reg_aladin_sym] 	512x512x131 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Maximum iteration number: 5
+[reg_aladin_sym] 	(10 during the first level)
+[reg_aladin_sym] Percentage of blocks: 50 %
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Current level 1 / 3
+[reg_aladin_sym] reference image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] floating image size: 	128x128x33 voxels	3.90625x3.90625x12 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [32 32 16]
+[reg_aladin_sym] Backward Block number = [32 32 9]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	2.380218
+0	1	0	-17.13241
+0	0	1	-9.465584
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	-2.380218
+0	1	0	17.13241
+0	0	1	9.465584
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9998985	0.0009055146	0.01421926	-1.059853
+-0.0009010831	0.9999996	-0.0003180752	0.5549906
+-0.01421954	0.00030523	0.9998989	2.843104
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9998984	-0.0009010828	-0.01421954	1.100674
+0.0009055148	0.9999996	0.0003052301	-0.5548984
+0.01421926	-0.000318075	0.9998989	-2.827569
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 2 / 3
+[reg_aladin_sym] reference image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] floating image size: 	256x256x66 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [64 64 16]
+[reg_aladin_sym] Backward Block number = [64 64 17]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9998985	0.0009055146	0.01421926	-1.059853
+-0.0009010831	0.9999996	-0.0003180752	0.5549906
+-0.01421954	0.00030523	0.9998989	2.843104
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.9998984	-0.0009010828	-0.01421954	1.100674
+0.0009055148	0.9999996	0.0003052301	-0.5548984
+0.01421926	-0.000318075	0.9998989	-2.827569
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999978	-0.0006831977	-0.001972695	0.0500999
+0.0006819813	0.9999996	-0.0006170592	0.2829584
+0.00197312	0.0006157103	0.9999979	1.282361
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999979	0.0006819816	0.001973115	-0.05282302
+-0.0006831973	0.9999996	0.0006157126	-0.2837136
+-0.001972699	-0.0006170569	0.9999979	-1.282085
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 3 / 3
+[reg_aladin_sym] reference image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] floating image size: 	512x512x131 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [128 128 31]
+[reg_aladin_sym] Backward Block number = [128 128 33]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9999978	-0.0006831977	-0.001972695	0.0500999
+0.0006819813	0.9999996	-0.0006170592	0.2829584
+0.00197312	0.0006157103	0.9999979	1.282361
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.9999979	0.0006819816	0.001973115	-0.05282302
+-0.0006831973	0.9999996	0.0006157126	-0.2837136
+-0.001972699	-0.0006170569	0.9999979	-1.282085
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9999979	-0.0007732036	0.001911715	-0.1905265
+0.0007731043	0.9999997	5.262737e-05	-0.07874428
+-0.001911756	-5.115227e-05	0.9999982	-0.8908929
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999979	0.0007731044	-0.001911755	0.1888838
+-0.0007732035	0.9999997	-5.114931e-05	0.07855137
+0.001911716	5.263034e-05	0.9999982	0.8912597
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin] Registration performed in 5 min 10 sec
+[reg_aladin] Have a good day !
+[NiftyReg] Starting the composition of two transformations
+[NiftyReg] Transformation 1 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_1/inv_average_transformation.txt
+[NiftyReg] Transformation 2 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_1/transformation_0.txt
+[NiftyReg] Starting the composition of two transformations
+[NiftyReg] Transformation 1 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_1/inv_average_transformation.txt
+[NiftyReg] Transformation 2 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_1/transformation_1.txt
+[NiftyReg] Starting the composition of two transformations
+[NiftyReg] Transformation 1 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_1/inv_average_transformation.txt
+[NiftyReg] Transformation 2 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_1/transformation_6.txt
+[NiftyReg] Starting the composition of two transformations
+[NiftyReg] Transformation 1 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_1/inv_average_transformation.txt
+[NiftyReg] Transformation 2 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_1/transformation_11.txt
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_1/comp_transformation_0.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_0.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_0.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/BODY_0.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_1/comp_transformation_0.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_0.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/BODY_0.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_0.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_1.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_1/comp_transformation_1.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_1.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_1.nii.gz
+	512x512x156 voxels, 1 volumes
+	0.976562x0.976562x2.5 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_1.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/BODY_1.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_1/comp_transformation_1.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_1.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/BODY_1.nii.gz
+	512x512x156 voxels, 1 volumes
+	0.976562x0.976562x2.5 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_1.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_6.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_1/comp_transformation_6.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_6.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_6.nii.gz
+	512x512x163 voxels, 1 volumes
+	0.976562x0.976562x2.5 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_6.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/BODY_6.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_1/comp_transformation_6.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_6.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/BODY_6.nii.gz
+	512x512x163 voxels, 1 volumes
+	0.976562x0.976562x2.5 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_6.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_11.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_1/comp_transformation_11.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_11.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_11.nii.gz
+	512x512x131 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_11.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_0/BODY_11.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_1/comp_transformation_11.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_11.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/CT_0.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_0/BODY_11.nii.gz
+	512x512x131 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_11.nii.gz
+/home/pnikou/Classes.py:360: RuntimeWarning: Mean of empty slice
+  Masked_Average = np.nanmean(Nan_map, axis = 3)
+[reg_aladin] 
+[reg_aladin] Command line:
+[reg_aladin] 	 reg_aladin -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_0.nii.gz -aff /home/pnikou/Documents/Data/BATCH_1/Iteration_2/transformation_0.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_2/resampled_img_0.nii.gz -omp 12
+[reg_aladin] 
+[reg_aladin] OpenMP is used with 12 thread(s)
+[reg_aladin_sym] Parameters
+[reg_aladin_sym] Platform: cpu_platform
+[reg_aladin_sym] Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_0.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Maximum iteration number: 5
+[reg_aladin_sym] 	(10 during the first level)
+[reg_aladin_sym] Percentage of blocks: 50 %
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Current level 1 / 3
+[reg_aladin_sym] reference image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] floating image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [32 32 16]
+[reg_aladin_sym] Backward Block number = [32 32 16]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9888825	0.002639479	-0.00903153	1.069752
+-0.002305075	0.9039072	-0.004289012	-8.580036
+0.001813159	-0.004340168	0.9735336	-0.3185934
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+1.011218	-0.002907854	0.009368325	-1.103718
+0.00256985	1.106324	0.004897877	9.491114
+-0.001871888	0.004937588	1.02719	0.3716232
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 2 / 3
+[reg_aladin_sym] reference image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] floating image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [64 64 16]
+[reg_aladin_sym] Backward Block number = [64 64 16]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9888825	0.002639479	-0.00903153	1.069752
+-0.002305075	0.9039072	-0.004289012	-8.580036
+0.001813159	-0.004340168	0.9735336	-0.3185934
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1.011218	-0.002907854	0.009368325	-1.103718
+0.00256985	1.106324	0.004897877	9.491114
+-0.001871888	0.004937588	1.02719	0.3716232
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9944084	0.0005386055	-0.006461131	0.481506
+-0.004934336	0.9038855	-0.003664579	-8.930297
+0.003490275	0.002587973	0.9695889	1.465987
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+1.005597	-0.0006183925	0.00669874	-0.4995435
+0.005474844	1.10632	0.004217838	9.870941
+-0.003634506	-0.0029507	1.03133	-1.536516
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 3 / 3
+[reg_aladin_sym] reference image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] floating image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [128 128 31]
+[reg_aladin_sym] Backward Block number = [128 128 31]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9944084	0.0005386055	-0.006461131	0.481506
+-0.004934336	0.9038855	-0.003664579	-8.930297
+0.003490275	0.002587973	0.9695889	1.465987
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1.005597	-0.0006183925	0.00669874	-0.4995435
+0.005474844	1.10632	0.004217838	9.870941
+-0.003634506	-0.0029507	1.03133	-1.536516
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9948382	-0.0003154748	-0.004517206	0.2508997
+-0.005065243	0.9051995	-0.002879492	-8.836757
+-0.00242974	0.01231269	0.9803008	2.120055
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+1.005201	0.0002873108	0.004632792	-0.2594876
+0.005632527	1.104686	0.003270811	9.753497
+0.002420712	-0.01387427	1.020066	-2.285806
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin] Registration performed in 7 min 12 sec
+[reg_aladin] Have a good day !
+[reg_aladin] 
+[reg_aladin] Command line:
+[reg_aladin] 	 reg_aladin -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_1.nii.gz -aff /home/pnikou/Documents/Data/BATCH_1/Iteration_2/transformation_1.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_2/resampled_img_1.nii.gz -omp 12
+[reg_aladin] 
+[reg_aladin] OpenMP is used with 12 thread(s)
+[reg_aladin_sym] Parameters
+[reg_aladin_sym] Platform: cpu_platform
+[reg_aladin_sym] Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_1.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Maximum iteration number: 5
+[reg_aladin_sym] 	(10 during the first level)
+[reg_aladin_sym] Percentage of blocks: 50 %
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Current level 1 / 3
+[reg_aladin_sym] reference image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] floating image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [32 32 16]
+[reg_aladin_sym] Backward Block number = [32 32 16]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+1.002207	-0.0093855	-0.004564188	-1.400456
+0.001934304	0.9855512	-0.002913265	-4.022618
+-0.004432198	-0.008475735	0.9967178	-0.9529363
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9977993	0.009541675	0.004597029	1.440137
+-0.001945276	1.014668	0.002956821	4.081714
+0.004420464	0.008670802	1.003339	0.9971877
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 2 / 3
+[reg_aladin_sym] reference image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] floating image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [64 64 16]
+[reg_aladin_sym] Backward Block number = [64 64 16]
+[reg_aladin_sym] Initial forward transformation matrix::
+1.002207	-0.0093855	-0.004564188	-1.400456
+0.001934304	0.9855512	-0.002913265	-4.022618
+-0.004432198	-0.008475735	0.9967178	-0.9529363
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.9977993	0.009541675	0.004597029	1.440137
+-0.001945276	1.014668	0.002956821	4.081714
+0.004420464	0.008670802	1.003339	0.9971877
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9971261	-0.005975198	-0.005454833	-0.790257
+0.0003850874	0.992824	-0.01229927	-1.783863
+-0.0008156123	-0.001073853	0.9988686	0.1039962
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+1.002884	0.00604175	0.005551156	0.8027368
+-0.00037885	1.007239	0.01240026	1.795188
+0.000818484	0.001087785	1.00115	-0.1015286
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 3 / 3
+[reg_aladin_sym] reference image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] floating image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [128 128 31]
+[reg_aladin_sym] Backward Block number = [128 128 31]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9971261	-0.005975198	-0.005454833	-0.790257
+0.0003850874	0.992824	-0.01229927	-1.783863
+-0.0008156123	-0.001073853	0.9988686	0.1039962
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1.002884	0.00604175	0.005551156	0.8027368
+-0.00037885	1.007239	0.01240026	1.795188
+0.000818484	0.001087785	1.00115	-0.1015286
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9990584	-0.002593303	-0.002628999	-0.3459941
+-2.271727e-05	0.9951822	-0.006205971	-0.7729948
+-0.001131984	-0.0006469111	0.9993949	0.1881164
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+1.000946	0.002610043	0.002649286	0.3478405
+2.991898e-05	1.004845	0.006239895	0.7755767
+0.00113376	0.0006533954	1.000612	-0.1873343
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin] Registration performed in 7 min 2 sec
+[reg_aladin] Have a good day !
+[reg_aladin] 
+[reg_aladin] Command line:
+[reg_aladin] 	 reg_aladin -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_6.nii.gz -aff /home/pnikou/Documents/Data/BATCH_1/Iteration_2/transformation_6.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_2/resampled_img_6.nii.gz -omp 12
+[reg_aladin] 
+[reg_aladin] OpenMP is used with 12 thread(s)
+[reg_aladin_sym] Parameters
+[reg_aladin_sym] Platform: cpu_platform
+[reg_aladin_sym] Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_6.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Maximum iteration number: 5
+[reg_aladin_sym] 	(10 during the first level)
+[reg_aladin_sym] Percentage of blocks: 50 %
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Current level 1 / 3
+[reg_aladin_sym] reference image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] floating image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [32 32 16]
+[reg_aladin_sym] Backward Block number = [32 32 16]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9986417	-0.005350717	-0.002399204	-0.2522199
+0.002111493	0.9906829	-0.001774359	1.009972
+0.0005993655	-0.0027128	1.003666	0.4805067
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+1.001347	0.005414896	0.002403234	0.245936
+-0.002135304	1.009398	0.001779388	-1.020857
+-0.0006037523	0.002725059	0.9963507	-0.4816577
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 2 / 3
+[reg_aladin_sym] reference image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] floating image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [64 64 16]
+[reg_aladin_sym] Backward Block number = [64 64 16]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9986417	-0.005350717	-0.002399204	-0.2522199
+0.002111493	0.9906829	-0.001774359	1.009972
+0.0005993655	-0.0027128	1.003666	0.4805067
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1.001347	0.005414896	0.002403234	0.245936
+-0.002135304	1.009398	0.001779388	-1.020857
+-0.0006037523	0.002725059	0.9963507	-0.4816577
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.9995796	-0.002750128	-0.001708675	-0.04384958
+0.0005697801	0.9973801	-0.001072504	0.3440161
+-0.0008232914	-0.0002429007	1.003286	0.3543348
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+1.00042	0.002758927	0.001706744	0.04231415
+-0.0005706344	1.002625	0.001070825	-0.3453238
+0.0008208017	0.0002450047	0.9967262	-0.3532231
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 3 / 3
+[reg_aladin_sym] reference image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] floating image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [128 128 31]
+[reg_aladin_sym] Backward Block number = [128 128 31]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.9995796	-0.002750128	-0.001708675	-0.04384958
+0.0005697801	0.9973801	-0.001072504	0.3440161
+-0.0008232914	-0.0002429007	1.003286	0.3543348
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1.00042	0.002758927	0.001706744	0.04231415
+-0.0005706344	1.002625	0.001070825	-0.3453238
+0.0008208017	0.0002450047	0.9967262	-0.3532231
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+1.000024	-0.0003453525	-1.814153e-05	-0.006981567
+3.65343e-05	0.9997603	-0.000319843	0.05560385
+-0.000424321	-0.0002305634	1.001804	0.3094578
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999756	0.000345431	1.82187e-05	0.006956552
+-3.640667e-05	1.00024	0.000319343	-0.05571626
+0.0004235383	0.0002303498	0.9981996	-0.3089105
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin] Registration performed in 6 min 38 sec
+[reg_aladin] Have a good day !
+[reg_aladin] 
+[reg_aladin] Command line:
+[reg_aladin] 	 reg_aladin -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_11.nii.gz -aff /home/pnikou/Documents/Data/BATCH_1/Iteration_2/transformation_11.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_2/resampled_img_11.nii.gz -omp 12
+[reg_aladin] 
+[reg_aladin] OpenMP is used with 12 thread(s)
+[reg_aladin_sym] Parameters
+[reg_aladin_sym] Platform: cpu_platform
+[reg_aladin_sym] Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_11.nii.gz
+[reg_aladin_sym] 	512x512x123 voxels
+[reg_aladin_sym] 	0.976562x0.976562x3 mm
+[reg_aladin_sym] Maximum iteration number: 5
+[reg_aladin_sym] 	(10 during the first level)
+[reg_aladin_sym] Percentage of blocks: 50 %
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Current level 1 / 3
+[reg_aladin_sym] reference image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] floating image size: 	128x128x62 voxels	3.90625x3.90625x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [32 32 16]
+[reg_aladin_sym] Backward Block number = [32 32 16]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	0
+0	1	0	0
+0	0	1	0
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+1.00068	0.002143396	0.003018821	0.3589182
+-0.001307207	0.9950362	0.006138616	-1.174384
+-0.00047783	0.002913081	0.9912615	1.19426
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9993166	-0.002143746	-0.003030077	-0.3575718
+0.001309882	1.005004	-0.006227708	1.187228
+0.0004778635	-0.0029545	1.008832	-1.208449
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 2 / 3
+[reg_aladin_sym] reference image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] floating image size: 	256x256x62 voxels	1.95312x1.95312x6 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [64 64 16]
+[reg_aladin_sym] Backward Block number = [64 64 16]
+[reg_aladin_sym] Initial forward transformation matrix::
+1.00068	0.002143396	0.003018821	0.3589182
+-0.001307207	0.9950362	0.006138616	-1.174384
+-0.00047783	0.002913081	0.9912615	1.19426
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.9993166	-0.002143746	-0.003030077	-0.3575718
+0.001309882	1.005004	-0.006227708	1.187228
+0.0004778635	-0.0029545	1.008832	-1.208449
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+1.000109	0.001058212	0.002356465	0.1088756
+0.000280868	0.9975925	0.002673917	-0.3633
+-0.001679083	-0.001023857	0.9947943	0.7720482
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.999887	-0.001063074	-0.002365672	-0.1074231
+-0.0002860368	1.002411	-0.002693712	0.3662866
+0.001687384	0.001029901	1.005226	-0.7758927
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 3 / 3
+[reg_aladin_sym] reference image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] floating image size: 	512x512x123 voxels	0.976562x0.976562x3 mm
+[reg_aladin_sym] Block size = [4 4 4]
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [128 128 31]
+[reg_aladin_sym] Backward Block number = [128 128 31]
+[reg_aladin_sym] Initial forward transformation matrix::
+1.000109	0.001058212	0.002356465	0.1088756
+0.000280868	0.9975925	0.002673917	-0.3633
+-0.001679083	-0.001023857	0.9947943	0.7720482
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+0.999887	-0.001063074	-0.002365672	-0.1074231
+-0.0002860368	1.002411	-0.002693712	0.3662866
+0.001687384	0.001029901	1.005226	-0.7758927
+0	0	0	1
+[reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+1.000023	0.0003930177	0.0003687199	0.007804157
+-7.285472e-05	0.9993472	0.0004210938	-0.008360462
+-0.0004038485	-0.001748331	0.9987586	0.08789683
+0	0	0	1
+[reg_aladin_sym] Final backward transformation matrix::
+0.9999763	-0.0003939107	-0.0003690034	-0.007774831
+7.273017e-05	1.000653	-0.0004219192	0.008402436
+0.0004044682	0.001751487	1.001242	-0.08799452
+0	0	0	1
+[reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin] Registration performed in 6 min 38 sec
+[reg_aladin] Have a good day !
+[NiftyReg] Starting the composition of two transformations
+[NiftyReg] Transformation 1 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_2/inv_average_transformation.txt
+[NiftyReg] Transformation 2 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_2/transformation_0.txt
+[NiftyReg] Starting the composition of two transformations
+[NiftyReg] Transformation 1 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_2/inv_average_transformation.txt
+[NiftyReg] Transformation 2 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_2/transformation_1.txt
+[NiftyReg] Starting the composition of two transformations
+[NiftyReg] Transformation 1 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_2/inv_average_transformation.txt
+[NiftyReg] Transformation 2 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_2/transformation_6.txt
+[NiftyReg] Starting the composition of two transformations
+[NiftyReg] Transformation 1 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_2/inv_average_transformation.txt
+[NiftyReg] Transformation 2 is an affine parametrisation:
+[NiftyReg] /home/pnikou/Documents/Data/BATCH_1/Iteration_2/transformation_11.txt
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_0.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_2/comp_transformation_0.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_2/CT_0.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_0.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_2/CT_0.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_0.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_2/comp_transformation_0.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_2/BODY_0.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_0.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_2/BODY_0.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_1.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_2/comp_transformation_1.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_2/CT_1.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_1.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_2/CT_1.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_1.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_2/comp_transformation_1.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_2/BODY_1.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_1.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_2/BODY_1.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_6.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_2/comp_transformation_6.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_2/CT_6.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_6.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_2/CT_6.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_6.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_2/comp_transformation_6.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_2/BODY_6.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_6.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_2/BODY_6.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_11.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_2/comp_transformation_11.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_2/CT_11.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/CT_11.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_2/CT_11.nii.gz
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Command line:
+ reg_resample -ref /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz -flo /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_11.nii.gz -trans /home/pnikou/Documents/Data/BATCH_1/Iteration_2/comp_transformation_11.txt -res /home/pnikou/Documents/Data/BATCH_1/Iteration_2/BODY_11.nii.gz -inter 3 -pad nan
+Parameters
+Reference image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/average_CT.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+Floating image name: /home/pnikou/Documents/Data/BATCH_1/Iteration_1/BODY_11.nii.gz
+	512x512x123 voxels, 1 volumes
+	0.976562x0.976562x3 mm
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+[NiftyReg] Resampled image has been saved: /home/pnikou/Documents/Data/BATCH_1/Iteration_2/BODY_11.nii.gz
+Done: Started at 2023-10-10 17:40:07.422478, finished at 2023-10-10 19:14:12.224047 (Took 1:34:04.801569)

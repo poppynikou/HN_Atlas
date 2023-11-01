@@ -43,7 +43,6 @@ for itteration in range(1,3):
     Groupwise_.resample_imgs()
     Groupwise_.calc_average_image()
 
-Groupwise_.set_itteration_no(itteration = 3)
 Groupwise_.create_multichannel_imgs([200,3000])
 Groupwise_.Generate_Bash_Scripts()
 
