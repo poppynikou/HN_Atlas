@@ -16,7 +16,6 @@ def calc_body_volume(path_to_body, path_to_vertabrae_segms):
 
     C1_obj,_,header = get_image_objects(path_to_C1)
     T2_obj,_,_ = get_image_objects(path_to_T2)
-    slice_thickness = header['pixdim'][3]
 
     nonzero_C1 = max(np.nonzero(C1_obj)[2])
     nonzero_T2 = min(np.nonzero(T2_obj)[2])
@@ -27,21 +26,6 @@ def calc_body_volume(path_to_body, path_to_vertabrae_segms):
 
     return total_volume
 
-def calc_height_of_patient(path_to_vertabrae_segms):
-
-    path_to_C1 = path_to_vertabrae_segms + '/vertebrae_C1.nii.gz'
-    path_to_T2 = path_to_vertabrae_segms + '/vertebrae_T2.nii.gz'
-
-    C1_obj,_,header = get_image_objects(path_to_C1)
-    T2_obj,_,_ = get_image_objects(path_to_T2)
-    slice_thickness = header['pixdim'][3]
-
-    nonzero_C1 = np.nonzero(C1_obj)
-    nonzero_T2 = np.nonzero(T2_obj)
-
-    height = (max(nonzero_C1[2]) - min(nonzero_T2[2])) * slice_thickness
-    
-    return height
 
 def get_image_objects(Img_path):
     
@@ -82,34 +66,33 @@ def fit_polynomial(path_to_spinal_cord):
             middleIndex = int((len(indexes) - 1)/2)
             middleCordCoords['Y'].append(indexes[1][middleIndex])
             middleCordCoords['Z'].append(z)
-    
+
+
     middleCordCoords['Y'] = normalize([middleCordCoords['Y']], norm='max')
     middleCordCoords['Z'] = normalize([middleCordCoords['Z']], norm='max')
     
     p = np.polyfit(middleCordCoords['Z'][0], middleCordCoords['Y'][0], deg=3)
     #minima = -p[1]/2*p[0]
-
+    #print(p)
     '''
     plt.scatter(middleCordCoords['Z'],middleCordCoords['Y'])
     x = np.arange(0,1.1,0.1)
     x2 = x**2
     x3 = x**3
     plt.plot(x, p[0]*x3+p[1]*x2+p[2]*x+p[3], color = 'red')
-    plt.ylim([0,1])
+    #plt.ylim([0,1])
     plt.show(block=False)
-    plt.pause(1)
+    plt.pause(5)
     plt.close()
     '''
 
-    return p 
+    return p
 
 def calc_minima(polynomial_coefficients):
 
     a = 3*polynomial_coefficients[0]
     b = 2*polynomial_coefficients[1]
     c = polynomial_coefficients[2]
-
-    
 
     #calculate discriminant
     discriminant = np.sqrt(np.square(b)- (4*a*c))
@@ -127,10 +110,50 @@ def calc_minima(polynomial_coefficients):
 
     # find minima
     for index, second_vericative in enumerate(second_derivatives):
-        if second_vericative >0:
+        if second_vericative>0:
             return minimas[index]
         else:
             pass
+
+def calc_height_of_patient(path_to_vertabrae_segms, parameters):
+    
+    path_to_C1 = path_to_vertabrae_segms + '/vertebrae_C1.nii.gz'
+    path_to_T2 = path_to_vertabrae_segms + '/vertebrae_T2.nii.gz'
+
+    C1_obj,_,header = get_image_objects(path_to_C1)
+    T2_obj,_,_ = get_image_objects(path_to_T2)
+    slice_thickness = header['pixdim'][3]
+
+    nonzero_C1 = np.nonzero(C1_obj)
+    nonzero_T2 = np.nonzero(T2_obj)
+
+    arclength = calc_cubic_arc_length(parameters)
+
+    height = (max(nonzero_C1[2]) - min(nonzero_T2[2])) * slice_thickness * arclength
+    
+    return height
+
+
+def calc_cubic_arc_length(parameters):
+    '''
+    Numerical integration of arc length of cubic polynomial.
+    Integration between 0 and 1. 
+    '''
+    a = 0
+    b = 1
+    n = 100
+    h = (b - a) / (n - 1)
+    x = np.linspace(a, b, n)
+
+    coef1 =  parameters[0]
+    coef2 = parameters[1]
+    coef3 = parameters[2]
+
+    f = np.sqrt(1+ (3*coef1*x**2 + 2*coef2*x + coef3)**2)
+
+    I_simp = (h/3) * (f[0] + 2*sum(f[:n-2:2]) + 4*sum(f[1:n-1:2]) + f[n-1])
+
+    return I_simp
 
 
 if __name__ == '__main__':
@@ -141,31 +164,21 @@ if __name__ == '__main__':
 
 
     text_file = 'C:/Users/poppy/Documents/HN_Atlas/HNSCC/HNSCC_Characteristics.txt'
-    #f = open(text_file, "a")
-    #f.write('Patient,Volume,Height,a,b,c,minima\n')
+    f = open(text_file, "a")
+    f.write('Patient,Volume,Height,a,b,c,minima\n')
         
     for folder in folders:
 
         path_to_vertabrae_segms = path_to_data + '/'+ folder + '/NIFTI_TOTALSEG/'
-        #height = calc_height_of_patient(path_to_vertabrae_segms)
-
         path_to_body = path_to_data + '/'+ folder + '/NIFTI_LIMBUS/BIN_body.nii.gz'
-        #Volume = calc_body_volume(path_to_body, path_to_vertabrae_segms)
+        Volume = calc_body_volume(path_to_body, path_to_vertabrae_segms)
         
         path_to_spinal_cord = path_to_data + '/'+ folder + '/NIFTI_LIMBUS/BIN_spinalcord.nii.gz'
         quadratic_fitting_params = fit_polynomial(path_to_spinal_cord)
         minima_loc = calc_minima(quadratic_fitting_params)
-        
-        if folder == 'HN_159' or folder == 'HN_161':
-            print(str(folder) + ', ' + str(minima_loc))
-            print(quadratic_fitting_params)
-            a = quadratic_fitting_params[0]
-            b = quadratic_fitting_params[1]
-            c = quadratic_fitting_params[2]
-            x = np.arange(-10,10)
-            plt.plot(3*a*x**2 + 2*b*x + c)
-            plt.show()
+
+        height = calc_height_of_patient(path_to_vertabrae_segms, quadratic_fitting_params)
 
         #dont write the intercept will always be 1 roughly
-        #f.write(str(folder) + ',' + str(Volume) + ',' + str(height)+',' + str(quadratic_fitting_params[0]) + ',' + str(quadratic_fitting_params[1]) + ',' + str(quadratic_fitting_params[2]) + ',' + str(minima_loc) + '\n')
+        f.write(str(folder) + ',' + str(Volume) + ',' + str(height)+',' + str(quadratic_fitting_params[0]) + ',' + str(quadratic_fitting_params[1]) + ',' + str(quadratic_fitting_params[2]) + ',' + str(minima_loc) + '\n')
 

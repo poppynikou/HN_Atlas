@@ -249,7 +249,7 @@ def calc_body_volume(path_to_body):
 
     return total_volume
 
-def calc_height_of_patient(path_to_vertabrae_segms):
+def calc_integral_limits(path_to_vertabrae_segms):
 
     path_to_C1 = path_to_vertabrae_segms + '/vertebrae_C1.nii.gz'
     path_to_T2 = path_to_vertabrae_segms + '/vertebrae_T2.nii.gz'
@@ -261,9 +261,12 @@ def calc_height_of_patient(path_to_vertabrae_segms):
     nonzero_C1 = np.nonzero(C1_obj)
     nonzero_T2 = np.nonzero(T2_obj)
 
-    height = (max(nonzero_C1[2]) - min(nonzero_T2[2])) * slice_thickness
-    
-    return height
+    maximum = max(nonzero_C1[2])
+    minimum = min(nonzero_T2[2])
+
+    return maximum, minimum, slice_thickness
+
+
 
 if __name__ == '__main__':
 
@@ -273,19 +276,20 @@ if __name__ == '__main__':
 
 
     text_file = 'C:/Users/poppy/Documents/HN_Atlas/HNSCC/HNSCC_Characteristics.txt'
-    #f = open(text_file, "a")
-    #f.write('Patient, Body_Volume Max_Curvature Height\n')
+    f = open(text_file, "a")
+    f.write('Patient, Body_Volume Max_Curvature Height\n')
         
     for folder in folders:
+        print(folder)
 
         path_to_body = path_to_data + '/'+ folder + '/NIFTI_LIMBUS/BIN_body.nii.gz'
         #Volume = calc_body_volume(path_to_body)
         
         path_to_spinal_cord = path_to_data + '/'+ folder + '/NIFTI_LIMBUS/BIN_spinalcord.nii.gz'
-        curvature = calc_max_spinal_cord_curvature(path_to_spinal_cord)
+        #curvature = calc_max_spinal_cord_curvature(path_to_spinal_cord)
 
         path_to_vertabrae_segms = path_to_data + '/'+ folder + '/NIFTI_TOTALSEG/'
-        #height = calc_height_of_patient(path_to_vertabrae_segms)
+        height = calc_height_of_patient(path_to_vertabrae_segms)
 
         #f.write(str(folder) + ' ' + str(Volume) + ' ' + str(curvature) + ' ' + str(height) +  '\n')
 
