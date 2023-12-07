@@ -28,13 +28,12 @@ pca = PCA()
 pca.fit(df)
 print(pca.explained_variance_ratio_)
 
-#plt.plot(range(1,7), pca.explained_variance_ratio_.cumsum(), marker='o', linestyle='--')
-#plt.xlabel('Number of Features')    
-#plt.ylabel('Explained Variance')
-#plt.show()
+plt.plot(range(1,7), pca.explained_variance_ratio_.cumsum(), marker='o', linestyle='--')
+plt.xlabel('Number of Features')    
+plt.ylabel('Explained Variance')
+plt.show()
 
 '''
-
 inertias = []
 for i in range(1,11):
     kmeans = KMeans(n_clusters=i, init = 'k-means++', random_state=42)
@@ -46,7 +45,6 @@ plt.title('Elbow method')
 plt.xlabel('Number of clusters')
 plt.ylabel('Inertia')
 plt.show()
-
 '''
 
 opt_no_clusters = 4
